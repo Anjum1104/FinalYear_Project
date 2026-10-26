@@ -1,0 +1,6 @@
+opencv-python
+dlib
+mediapipe
+PyQt5
+numpy
+scipy
