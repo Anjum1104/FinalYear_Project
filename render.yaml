@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: driver-drowsiness-demo
+    runtime: python
+    plan: free
+    buildCommand: >-
+      pip install -r requirements-web.txt &&
+      python -c "from pathlib import Path; p=Path('shape_predictor_68_face_landmarks.dat'); assert p.is_file() and p.stat().st_size > 50000000, 'Git LFS landmark model is missing from this checkout'"
+    startCommand: gunicorn web_app:app --workers 1 --threads 4 --timeout 120
+    healthCheckPath: /healthz
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.11
