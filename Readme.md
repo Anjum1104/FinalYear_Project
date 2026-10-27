@@ -350,9 +350,3 @@ This opens the illustrated simulation UI without a webcam worker.
 - https://github.com/ultralytics/ultralytics
 - https://roboflow.com/
 - https://academic.oup.com/sleepadvances/article/4/1/zpad006/7000589
-
-## 👤 Author
-
-**Walid EL HANNACH**  
-Embedded Systems Engineer – Embedded Software / AI / DevOps  
-🔗 [LinkedIn](https://www.linkedin.com/in/walid-el-hannach-a81984189/)
