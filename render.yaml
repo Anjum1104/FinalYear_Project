@@ -11,3 +11,5 @@ services:
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.11
+      - key: CMAKE_BUILD_PARALLEL_LEVEL
+        value: "1"
